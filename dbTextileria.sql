@@ -3,6 +3,13 @@ go
 use dbTextileria;
 go
 
+create table acceso(
+id uniqueidentifier not null primary key,
+nivel int ,
+descr varchar(max),
+datecreate datetime
+)
+
 create table usuarios(
 id uniqueidentifier not null primary key,
 codigo char(15),
